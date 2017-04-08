@@ -5,8 +5,8 @@ echo ":: ~/.vjb_git_commands loaded ::"
 # ------ Some git commands to help with workflow ------ #
 
 # Set up a new git repo
-# $1 = initial README.md contents
-# $2 = address of the repo
+#     $1 = initial README.md contents
+#     $2 = address of the repo
 gitsetup () {
    echo "# $1" >> README.md
    git init
@@ -17,8 +17,8 @@ gitsetup () {
 }
 
 # Set SSH Auth for this directory
-# $1 = name of the account
-# $2 = name of the repo
+#     $1 = name of the account
+#     $2 = name of the repo
 gitremoteset() {
    git remote set-url origin git@github.com:$1/$2 .
 }
@@ -30,13 +30,14 @@ gitupdate() {
 }
 
 # Set SSH Auth for this directory
-# $1 = name of the branch
-# $2 = name of the account
-# $3 = name of the repo
+#     $1 = name of the branch
+#     $2 = name of the account
+#     $3 = name of the repo
 gitclonebranch() {
    git clone -b $1 https://git@github.com/$2/$3
 }
 
+# Update dotfiles repo
 gitupdatedots() {
    cp ~/.vjb_* ~/dotfiles
    cp ~/.bashrc ~/dotfiles
@@ -46,4 +47,9 @@ gitupdatedots() {
    gitupdate
 
    cd -
+}
+
+# Display .vjb_git_commands files
+githelp() {
+   cat ~/.vjb_git_commands
 }

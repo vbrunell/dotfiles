@@ -35,3 +35,7 @@ gcbrowse() {
 gcdevbrowse() {
    firefox http://localhost:8080/
 }
+
+gchelp() {
+   cat ~/.vjb_gcloud_commands
+}
