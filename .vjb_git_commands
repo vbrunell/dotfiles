@@ -1,0 +1,38 @@
+#!/bin/bash
+
+echo ":: ~/.vjb_git_commands loaded ::"
+
+# ------ Some git commands to help with workflow ------ #
+
+# Set up a new git repo
+# $1 = initial README.md contents
+# $2 = address of the repo
+gitsetup () {
+   echo "# $1" >> README.md
+   git init
+   git add README.md
+   git commit -m "update"
+   git remote add origin $2
+   git push -u origin master
+}
+
+# Set SSH Auth for this directory
+# $1 = name of the account
+# $2 = name of the repo
+gitremoteset() {
+   git remote set-url origin git@github.com:$1/$2 .
+}
+
+# Update the contents of a repo
+gitupdate() {
+   git commit -a -m "update"
+   git push origin master
+}
+
+# Set SSH Auth for this directory
+# $1 = name of the branch
+# $2 = name of the account
+# $3 = name of the repo
+gitclonebranch() {
+   git clone -b $1 https://git@github.com/$2/$3
+}

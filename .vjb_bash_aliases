@@ -1,0 +1,133 @@
+#!/bin/bash
+
+echo ":: ~/.vjb_bash_aliases loaded ::"
+
+alias a='alias'
+
+a droid='cd /mnt/c/Users/Foobar/AndroidStudioProjects'
+a predict='cd ~/MedCode/prediction/google-api-java-client-samples/prediction-cmdline-sample'
+a predictpy='cd ~/MedCode/prediction-python/python-docs-samples/appengine/standard/hello_world'
+
+a webs='cd ~/webs/vbrunell.github.io'
+a istan='ssh brunell@istanbul.cs.mtu.edu'
+
+a py='python'
+a x='cd /mnt/c/Users/Foobar/Baz'
+a w='cd /mnt/c/Users/Foobar/Downloads'
+a s='cd /mnt/c/Users/Foobar/Documents'
+a d='cd /mnt/c/Users/Foobar/Desktop'
+
+a diab='ssh brunell@diablo.cs.fsu.edu'
+a linprog='ssh brunell@linprog.cs.fsu.edu'
+
+	# MS Thesis #
+
+a mst='cd && cd ./4-msthesis'
+
+	### FSU Fall 2016 ###
+
+a comp1='cd && cd ./COP5621/a1' # tokenizer
+a comp2='cd && cd ./COP5621/a2' # lex file
+a comp3='cd && cd ./COP5621/a3' # LR(0) item builder
+a comp4='cd && cd ./COP5621/a4' # Yacc grammar
+
+a data1='cd && cd ./CNT5505/a1'
+
+	### FSU Fall 2016 ###
+
+a rhello='cd && cd ./workspace/hello_app'
+a rwork='cd && cd ./workspace'
+
+	# FSU Fall 2015 #
+a cprog='cd && cd ./3-Cprogs'
+
+	# FSU Fall 2015 #
+a cda1='cd && cd ./CDA5155/CDAproj1'
+a cda2='cd && cd ./CDA5155/CDAproj2'
+a cop1='cd && cd ./COP4531/proj1'
+
+a vmm='cd && cd ./Desktop/CS/OldCourses/COP4610/Proj5/VMM'
+a dsproj3='cd && cd ./Desktop/Operat*/Proj3'
+a dsproj2='cd && cd ./Desktop/Data*/Proj2'
+a dsproj4='cd && cd ./Desktop/Data*/Proj4'
+a dsproj5='cd && cd ./Desktop/Data*/Proj5'
+a cprob1='cd && cd ./Desktop/COT4420/ChallengeProblem/cp2_cyk/'
+a osproj5='cd && cd ./Desktop/CS/OldCourses/COP4610/Proj5'
+
+a trial='./proj1.x < rib.2005* > ASdegree.txt && vim ASdegree.txt'
+a testp='cd && cd Test*'
+
+a fin='cd && cd ./CS/fPrep'
+a mars='cd && cd ./CS/Mars && java -jar Mars.jar'
+
+alias refresh='cd && source .bash_aliases'
+alias op='xdg-open'
+
+#Shell
+a linftp='sftp brunell@linprog.cs.fsu.edu'
+a progftp='sftp brunell@program1.cs.fsu.edu'
+a linprog='ssh brunell@linprog.cs.fsu.edu'
+a prog='ssh brunell@program1.cs.fsu.edu'
+a fsushell='ssh brunell@shell.cs.fsu.edu'
+
+# List aliases
+
+a la='ls -a'
+a ls='ls --color=auto'
+a ll='ls -la'
+a lh='ls -d .* --color=auto'
+
+# Easier directory movement
+
+a cd..='cd ..'
+a ..='cd ..'
+
+# Misc.
+
+a grep='grep --color=auto'
+a bc='bc -l'
+a diff='colordiff'
+a h='history'
+a j='jobs -l'
+a vi='vim'
+a ports='netstat -tulanp'
+a wget='wget -c'
+a run='./a.out'
+a op='xdg-open'
+a c='clear'
+
+# SU aliases
+
+a root='sudo -i'
+a su='sudo -i'
+a shutdown='sudo /sbin/shutdown'
+a reboot='sudo /sbin/reboot'
+
+# Directory Movement
+
+a edital='cd && vim .bash_aliases'
+
+a vn='cd ヴぃムノート && vim notes'
+a cdc='cd && cd 授業 && cd COP3330'
+a opsys='cd && cd ./授業/COP4610'
+a theory='cd && cd ./授業/COT4420'
+a ds='cd && cd ./授業/COP4530'
+a opsys='cd && cd ./授業/COP4610'
+a n='vim notes'
+a CS='cd && cd ./授業'
+a dmath='cd && cd ./数学/MAD2104'
+a corg='cd && cd ./数学/MAD2104'
+a itu='cd && cd ./授業/COP3353'
+a csn='cd && cd ./CS/notes'
+a corg4='cd && cd ./CS/corg1 && vim assign4.asm'
+a corg5='cd && cd ./CS/corg1 && vim assign5.s'
+a write='cd && cd ./書くこと'
+
+# Remove folders, including contents
+a rda='rm -R'
+
+# Shortcuts to executables
+a goog='chromium-browser'
+
+#Open notes
+a vcalc='vim 数学ノート'

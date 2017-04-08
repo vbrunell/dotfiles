@@ -1,0 +1,37 @@
+#!/bin/bash
+
+echo ":: ~/.vjb_gcloud_commands loaded ::"
+
+# Setting up an app in App Engine: https://cloud.google.com/appengine/docs/standard/python/quickstart
+# Setting up the Admin API: https://cloud.google.com/appengine/docs/admin-api/getting-started/
+# Flask example: https://cloud.google.com/appengine/docs/standard/python/getting-started/python-standard-env
+# Guestbook app example: https://cloud.google.com/appengine/docs/standard/python/getting-started/creating-guestbook
+#
+# Commands:
+#
+#     git clone https://github.com/GoogleCloudPlatform/python-docs-samples
+#     cd python-docs-samples/appengine/standard/hello_world
+#
+#     dev_appserver.py app.yaml     // start the app dev server
+#                                   // can change the code and it will update automatically
+#
+#     Then, visit http://localhost:8080/ in your web browser to view the app.
+#
+#     gcloud app deploy    // deploy the app
+#     gcloud app browse    // view the app
+
+gcdevserv() {
+   dev_appserver.py app.yaml
+}
+
+gcdeploy() {
+   gcloud app deploy
+}
+
+gcbrowse() {
+   gcloud app browse
+}
+
+gcdevbrowse() {
+   firefox http://localhost:8080/
+}
