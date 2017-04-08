@@ -20,22 +20,52 @@ echo ":: ~/.vjb_gcloud_commands loaded ::"
 #     gcloud app deploy    // deploy the app
 #     gcloud app browse    // view the app
 
+# Start the development server
 gcdevserv() {
    dev_appserver.py app.yaml
 }
 
+# Deploy the app to App Engine
 gcdeploy() {
    gcloud app deploy
 }
 
+# Browse to the app in App Engine
 gcbrowse() {
    gcloud app browse
 }
 
+# View the current output of the app using the dev server
 gcdevbrowse() {
    firefox http://localhost:8080/
 }
 
+# Display the contents of this file
 gchelp() {
    cat ~/.vjb_gcloud_commands
+}
+
+# Open the storage manager
+gcopstorage() {
+   firefox https://console.cloud.google.com/storage
+}
+
+# Open the main console
+gcopconsole() {
+   firefox https://console.cloud.google.com
+}
+
+# Open the project page
+gcopprojects() {
+   firefox https://console.cloud.google.com/iam-admin/projects
+}
+
+# Open a gcloud command reference sheet
+gcref() {
+   firefox https://cloud.google.com/sdk/gcloud/reference/
+}
+
+# Edit this file
+gcedit() {
+   vim ~/.vjb_gcloud_commands
 }

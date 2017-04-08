@@ -53,3 +53,18 @@ gitupdatedots() {
 githelp() {
    cat ~/.vjb_git_commands
 }
+
+# Edit this file
+gitedit() {
+   vim ~/.vjb_git_commands
+}
+
+# Open a reference sheet
+gitref() {
+   firefox https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
+}
+
+# Open a markdown reference sheet
+gitmdref() {
+   firefox https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+}

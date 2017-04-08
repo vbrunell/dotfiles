@@ -15,6 +15,13 @@ if [ -f ~/.vjb_git_commands ]; then
    . ~/.vjb_git_commands
 fi
 
+sourcedots() {
+   source ~/.vjb_bash_aliases
+   source ~/.vjb_git_commands
+   source ~/.vjb_gcloud_commands
+}
+
+
 # Google Cloud Services
 export GOOGLE_APPLICATION_CREDENTIALS="/mnt/c/gcloud-auth/Speech Test-89b1b82b9346.json"
 
