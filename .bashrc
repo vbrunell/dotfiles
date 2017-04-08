@@ -131,4 +131,3 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Allow graphical applications to run with Xming in Windows from the terminal
 export DISPLAY=:0
-

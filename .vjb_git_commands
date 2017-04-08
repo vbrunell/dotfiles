@@ -36,3 +36,14 @@ gitupdate() {
 gitclonebranch() {
    git clone -b $1 https://git@github.com/$2/$3
 }
+
+gitupdatedots() {
+   cp ~/.vjb_* ~/dotfiles
+   cp ~/.bashrc ~/dotfiles
+   cp ~/.vimrc ~/dotfiles
+   cd ~/dotfiles
+
+   gitupdate
+
+   cd -
+}
