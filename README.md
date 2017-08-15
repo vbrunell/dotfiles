@@ -1,8 +1,8 @@
 # dotfiles
 
-## My Vim: A lightweight customized vim configuration
+## My Vim
 
-The .vimrc contains my customized vim configuration.  
+The .vimrc contains my lightweight customized vim configuration.  
 
 It contains some useful plugins (NERDTree, CtrlP, YCM) and some handy settings and key mappings.
 
